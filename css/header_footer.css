@@ -1,0 +1,837 @@
+
+/* Хэдер */
+header {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1;
+}
+
+/* Первая линия */
+.bgTopInfo {
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 66px;
+    transition: 1s;
+}
+.contentBlockTopLine {
+    padding: 22px 15px 22px 15px;
+}
+.topPhone {
+    float: left;
+    font-size: 14px;
+    color: #ffffff ;
+    margin-right: 10px ;
+}
+.topPhone i{
+    margin-right: 7px;
+    font-size: 15px;
+    transform: rotateY(180deg);
+}
+.topMail {
+    float: left;
+    font-size: 14px;
+    color: #ffffff ;
+    margin-left: 30px ;
+    margin-right: 10px ;
+}
+
+.topMail i {
+    margin-right: 7px;
+    font-size: 15px;
+}
+
+.topSocSeti {
+    float: right;
+}
+
+.topSocSeti a {
+    padding: 0 10px;
+    color: #468ae7;
+}
+.topLogin {
+    float: right;
+    margin-left: 16px;
+    color: white;
+    text-decoration: none;
+}
+.topLogin i{
+    color: #468ae7;
+    margin-right: 7px;
+    font-size: 15px;
+}
+.topLogin a{
+    color: white;
+    text-decoration: none;
+}
+.signUp {
+    float: right;
+    margin-left: 26px;
+    color: white;
+
+}
+.signUp i {
+    color: #468ae7;
+    margin-right: 5px;
+}
+.signUp a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Первая линия */
+
+/* Вторая линия */
+.contentBlockTopLineSecond {
+    padding-bottom: 30px;
+    padding: 22px 15px 22px 15px;
+}
+
+.bgTopMenu {
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 70px;
+    z-index: 10;
+    transition: 1s;
+    
+}
+.logo {
+    float: left;
+}
+.logo img {
+    height: 21px;
+    
+}
+.searchTop {
+    float: right;
+}
+.topMenu {
+    float: right;
+    width: 664px;
+    padding-left: 0%;
+}
+.topMenu li {
+    float: left;
+    list-style: none;
+}
+.topMenu a i {
+    color: white;
+    margin-top: 3px;
+}
+.topMenu li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 14px;
+    padding-bottom: 24px;
+}
+
+.topMenu li a:hover {
+    border-bottom: #468ae7 4px solid;
+}
+
+.mobileTopMenu {
+    display: none;
+}
+
+/* Выподающее меню */
+.topMenu li ul {
+    position: absolute;
+    top: 70px;
+    width: 200px;
+    background-color: #262626;
+    display: none;
+    color: white;
+    padding: 10px 10px;
+    float: left;
+    transition: 1s;
+}
+.topMenu li ul li:nth-child(1) {
+    border-top: 1px solid white;
+}
+.topMenu li ul li a:hover {
+    border:none;
+}
+.topMenu li ul li:hover a {
+    color: black;
+}
+.topMenu li ul li:hover i {
+    color: black;
+    margin-left: 60px;
+    transition: 1s;
+}
+.topMenu li ul li:hover {
+    background-color: white;
+}
+.topMenu li:hover ul {
+    display: block;
+}
+.topMenu li ul li{
+    float: none;
+    padding: 10px 10px;
+    border-bottom: 1px solid white;
+}
+
+/* Мобильная верстка */
+@media (min-width: 320px) and (max-width: 1000px){
+
+    .mobileTopMenu {
+        display: block;
+        z-index: 999;
+    }
+    .desktopTopMenu {
+        display: none;
+    }
+    .menuBurger {
+        position: fixed;
+        width: 300px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+    }
+    .topMenu {
+        float: none;
+        width: 664px;
+        padding: 66px;
+        padding-left: 0%;
+    }
+    .topPhone {
+        float: none;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .topMail {
+        font-size: 14px;
+        color: #ffffff;
+        margin-left: 33px;
+        margin-top: 10px;
+    }
+    .topMail a {
+        text-decoration: none;
+        color: white;
+    }
+    .topMail a:focus {
+        text-decoration: none;
+        color: white;
+    }
+    .topMail a:active{
+        text-decoration: none;
+        color: white;
+    }
+    .topMail a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .topMenu li {
+        float: none; 
+        padding: 10;
+        list-style: none;
+        border-bottom: 1px solid;
+        transition: 1s;
+    }
+    .topMenu li:hover {
+       background-color: rgb(109, 109, 109);
+       color: white;
+    }
+    .topMenu li a:hover {
+        border-bottom: none;
+    }
+    .closeBurger {
+        position: absolute;
+        top: 9px;
+        right: 27px;
+    }
+    .menuBurger {
+        display: none;
+    }
+    .burger-menu {
+        display: inline-block;
+        width: 33px;
+        height: 50px;
+        position: relative;
+    }
+    .burger-menu span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-radius: 2px;
+        margin-top: 8px;
+        background: white;
+    }
+    .burger-menu span:first-child {
+        margin-top: 0;
+    }
+    .burger-menu .lines,
+    .burger-menu .crossed {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+    .burger-menu .crossed {
+        display: none;
+    }
+    .burger-menu .lines {
+        display: block;
+    }
+    .burger-menu.active .crossed {
+        display: block;
+    }
+    .burger-menu.active .lines {
+        display: none;
+    }
+    .burger-menu.active .crossed span {
+        position:absolute;
+        margin: 0;
+        width: 100%;
+    }
+    .burger-menu.active .crossed span:first-child {
+        -moz-transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+        -ms-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+    }
+    .burger-menu.active .crossed span:last-child {
+        -moz-transform: rotateZ(-45deg);
+        -ms-transform: rotateZ(-45deg);
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+    }
+    .burger {
+        width: 30px;
+        float: right;
+        margin-top: -13px;
+    }
+    .burger-menu {
+        display: inline-block;
+        width: 33px;
+        height: 50px;
+        position: relative;
+    }
+    .burger-menu span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-radius: 2px;
+        margin-top: 8px;
+        background: white;
+    }
+    .burger-menu span:first-child {
+        margin-top: 0;
+    }
+    .burger-menu .lines,
+    .burger-menu .crossed {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+    .burger-menu .crossed {
+        display: none;
+    }
+    .burger-menu .lines {
+        display: block;
+    }
+    .burger-menu.active .crossed {
+        display: block;
+    }
+    .burger-menu.active .lines {
+        display: none;
+    }
+    .burger-menu.active .crossed span {
+        position:absolute;
+        margin: 0;
+        width: 100%;
+    }
+    .burger-menu.active .crossed span:first-child {
+        -moz-transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+        -ms-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+    }
+    .burger-menu.active .crossed span:last-child {
+        -moz-transform: rotateZ(-45deg);
+        -ms-transform: rotateZ(-45deg);
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+    }
+    .topSocSeti{
+        float: none;
+    }
+    /* Мобильное меню бургер */
+    .topMenu li ul {
+        position: static;
+        height: 0;
+        width: 100%;
+        background-color: #000000;
+        display: none;
+        color: white;
+        padding: 0;
+        float: left;
+        margin: 10px 10px 30px 10px;
+        transition: 1s;
+    }
+    .topMenu li ul li:nth-child(1) {
+        border-top: 1px solid white;
+    }
+    .topMenu li ul li a:hover {
+        border:none;
+    }
+    .topMenu li ul li:hover a {
+        color: black;
+    }
+    .topMenu li ul li:hover i {
+        color: black;
+        margin-left: 60px;
+        transition: 1s;
+    }
+    .topMenu li ul li:hover {
+        background-color: white;
+    }
+    .topMenu li:hover ul {
+        display: block;
+        transition: 1s;
+    }   
+    .topMenu li ul li{
+        float: none;
+        padding: 10px 10px;
+        border-bottom: 1px solid rgb(51, 51, 51);
+    }
+
+    .topMenu li {
+        float: none; 
+        padding: 10;
+        list-style: none;
+        border-bottom: 1px solid;
+        transition: 1s;
+    }
+    .topMenu li:hover {
+       background-color: rgb(109, 109, 109);
+       color: white;
+    }
+    .topMenu li a:hover {
+        border-bottom: none;
+    }
+
+    
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+/* FOOTER */
+
+footer {
+    margin: 0!important;
+    padding: 0!important;
+    background-color: #303030;
+}
+
+.container .marginBlocks {
+    
+}
+.logoBottom {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.logoBottom img {
+    height: 23px;
+}
+.logoFirm li {
+    float: left;
+}
+.logoFirm li a img {
+    height: 65px; 
+    margin-right: 28px;
+    margin-top: 30px;
+}
+
+/* Общие классы */
+
+.marginBlocks {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.paddFooter{
+    padding-top: 28px;
+}
+/* Первый блок */
+.information {
+    color: white;
+    margin-top: 54px;
+}
+
+.contactInfo {
+    padding: 0 0 10px 20px;
+    font-size: 17px;
+}
+.pText {
+    padding: 20px 10px 20px 0;
+}
+
+.lineRightFooter {
+    border-right: 1px solid rgb(65, 64, 64);
+    height: 280px;
+}
+
+.polKonf {
+    width: 95%
+}
+/* Второй блок */
+.menu2 {margin-left:-15px}
+
+.menu1 {margin-left:5px}
+
+.topDest {
+    margin-left: 24px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.marginBlocks p {
+    color: white;
+}
+
+.marginBlocks a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.padTable {
+    padding: 0px 25px 0 25px;
+}
+.tebles {
+    padding: 10px;
+}
+
+.imgTable {
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+
+}
+
+.imgTable img {
+    width: 200%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: width 1s;
+    
+}
+
+.imgTable:hover img{
+    width: 230%;
+}
+
+
+
+
+
+.imgTable a{
+    width: 102%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: rgba(58, 58, 58, 0.6);
+    background-size: contain;
+    padding: 30px 0 30px 0;
+    transition: background-color 1s;
+}
+
+
+
+/* Третий блок */
+.socSetiBottom {
+    margin-left: 22px;
+    margin-top: 17px;
+}
+.lineLeftFooter {
+    border-left: 1px solid rgb(65, 64, 64);
+    height: 280px;
+}
+
+.footer-menu-left{    
+    margin-left: 0!important;  
+    margin-right: 0!important;  
+}
+
+.socnet li a {
+    margin: 0 25px 0 25px;
+}
+.card   {
+    padding-left: 5px!important;
+}
+.card div {
+   
+    margin-bottom: 15px;
+}
+
+/* ПОСЛЕДНЯЯ ЛИНИЯ */
+
+.lastLineFooter {
+    padding: 30px 0;
+    color: white;
+    background-color: #181818;
+}
+/*.menu-mobile {
+    margin-left: 21px;
+}*/
+.menu-mobile li {
+    padding: 8px 0 8px 0;
+}
+
+
+@media (min-width: 320px) and (max-width: 991px){
+    .lineRightFooter {
+        border-right: none;
+        margin-left: 30px;
+        padding-left: 35px;
+        height: 220px;
+        margin-top: 0;
+    }
+    .socSetiBottom {
+        margin-top: 0;
+    }
+    .lineLeftFooter {
+        border-left: none;
+        margin-left: 5px;
+        height: 200px;
+    }
+    .information {
+        margin-top: 0;
+    }
+    .logoFirm li a img {
+        height: 65px;
+        margin-right: 3px;
+        margin-top: 30px;
+    }
+}
+
+
+/* Общая моб верстка */
+
+@media (min-width: 320px) and (max-width: 375px){
+    .imgTable a {
+        padding: 50% 0 50% 0;
+    }
+    .card  {
+        padding-left: 0px!important;
+
+    }
+    .imgTable {
+        height: 200px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+    .imgTable {
+        height: 300px;
+    }
+
+    .imgTable a {
+        padding: 50% 0 50% 0;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .mediaMob {
+        width: 100%;
+    }
+
+    .tebles {
+        width: 50%;
+        float: left;
+    }
+
+    .imgTable {
+        height: 200px;
+    }
+
+    .imgTable a {
+        padding: 90px 0 90px 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .imgTable {
+        height: 65px;
+    }
+   
+}
+
+@media (max-width: 600px){
+    #bronAuth .remember_back {
+        margin-left: 0px;
+    }
+}
+
+
+/*12.04.19*/
+.spinnerContainerloader {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  border: 10px solid #f3f3f3f3;
+  border-background:  #000;
+  border-radius: 50%;
+  border-top: 10px solid #eeeeee;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  z-index: 100;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+ 
+/* тест Правки */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#bronAuth .block_auth_name a p {
+    color: grey!important;
+}
+
+#bronAuth .block_auth_name.active a p {
+    color: #7c0118!important;
+}
+
+@media screen and (min-width: 1024px) {
+.regfooterblock {
+    margin: 36px 110px 45px 60px!important;
+    height: 83px;
+    color: #777777;
+}
+
+}
+
+@media screen and (max-width: 1023px) {
+.regfooterblock {
+    margin: 35px 15px 20px!important;
+    height: 85px;
+    color: #777777;
+    /* opacity: 0.53; */
+}
+}
+
+div.news-list {
+    word-wrap: break-word;
+    display: block;
+    margin-top: 45px;
+}
+.wine-title {
+    font-weight: 600;
+  
+}
+.container-catalog {
+    margin-top: 40px;
+}
+
+#winery-list {
+    margin-top: 40px;
+}
+
+.content {
+    padding-top: 42px;
+}
+
+#winery-list .container .row:nth-child(1) {
+    margin-top: 44px!important;
+}
+
+#winery-list {
+    margin-top: 0;
+}
+
+
+
+
+
+/* Тест */
+section {
+    height: 2000px;
+}

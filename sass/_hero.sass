@@ -1,0 +1,193 @@
+/*slider*/
+html, body
+	margin: 0
+	padding: 0
+	font-family: 'Poppins', sans-serif
+	line-height: 1.7
+
+.prevArrow
+	width: 40px
+	height: 40px
+	position: absolute
+	z-index: 1
+	top: 45%
+	left: 3%
+	opacity:0
+	transition: 0.5s ease-in
+.nextArrow
+	position: absolute
+	top: 45%
+	width: 40px
+	height: 40px
+	right: 3%
+	z-index: 1
+	opacity: 0
+	transition: 0.5s ease-in
+.hero_slider
+	width: 100%
+	height: 680px
+	overflow: hidden
+	.slider_items
+		width: 100%
+		.items
+			position: relative
+			height: 680px
+		&:hover
+			.prevArrow
+				opacity:1
+			.nextArrow
+				opacity: 1
+		.container
+			height: 100%
+			display: flex
+			align-items: center
+		p
+			white-space: nowrap
+		.sl_image_first
+			background-image: url('../images/slider-1.jpg')
+			background-size: cover
+			background-position: center center
+			width: 100%
+			height: 100%
+		.hero_text_first
+			color: white
+			p:first-child
+				font-size: 81px
+				font-weight: 600
+			p:nth-child(2)
+				font-size: 45px
+				font-weight: 600
+				color: $fcolor
+			p:nth-child(3)
+					font-size: 18px
+					font-weight: 400
+					color: rgb(218, 229, 255)
+
+			button
+				background-color: $primary
+				margin: 18px 0 0 0
+				padding: 20px 30px
+				color: white
+				outline: none
+				cursor: pointer
+				border: none
+				border-radius: 3px
+				text-transform: uppercase
+				font-family: $roboto-b
+				&:hover
+					background-color: rgb(70, 123, 231)
+
+
+		.sl_image_second
+			background-image: url('../images/slider-2.jpg')
+			background-size: cover
+			background-position: center center
+			width: 100%
+			height: 100%
+
+		.hero_text_second
+			color: white
+			p:first-child
+				font-size: 36px
+				font-weight: 500
+				color: $fcolor
+			p:nth-child(2)
+				font-size: 87px
+				font-weight: 700
+				color: white
+				text-transform: uppercase
+			p:nth-child(3)
+					font-size: 18px
+					font-weight: 400
+					color: rgb(218, 229, 255)
+
+			button
+				background-color: $primary
+				margin: 18px 0 0 0
+				padding: 20px 30px
+				color: white
+				outline: none
+				cursor: pointer
+				border: none
+				border-radius: 3px
+				text-transform: uppercase
+				font-family: $roboto-b
+				&:hover
+					background-color: rgb(70, 123, 231)
+
+
+		.sl_image_third
+			background-image: url('../images/slider-3.jpg')
+			background-size: cover
+			background-position: center center
+			width: 100%
+			height: 100%
+		.hero_text_third
+			color: white
+			p:first-child
+				text-transform: uppercase
+				font-size: 36px
+				font-weight: 400
+				color: white
+			p:nth-child(2)
+				font-size: 71px
+				font-weight: 700
+				color: white
+			p:nth-child(3)
+				font-size: 18px
+				font-weight: 400
+				color: rgb(218, 229, 255)
+
+			button
+				background-color: white
+				padding: 20px 30px
+				color: black
+				outline: none
+				cursor: pointer
+				border: none
+				border-radius: 3px
+				text-transform: uppercase
+				font-family: $roboto-b
+				&:hover
+					background-color: rgb(70, 123, 231)
+					color: white
+
+.slider_items
+	.slick-dots
+		bottom: 25px
+		li
+			border-radius: 50%
+			border: 1px solid rgba(255,255,255, 0.2)
+			width: 16px
+			height: 16px
+			button
+				background-color: white
+				opacity: 0.7
+				border-radius: 50%
+				transition: 0.2s
+				width: 16px
+				height: 16px
+				position: absolute
+				left: -1px
+				top: -1px
+				&:before
+					color: transparent
+					width: 0px
+					height: 0px
+					font-size:0px
+					line-height: 0px
+		li:hover
+			border: 1px solid rgba(255,255,255, 1)
+			button
+				opacity: 1
+				transform: scale(0.4)
+		.slick-active
+			border: 1px solid rgba(255,255,255, 1)
+			button
+				opacity: 1
+				transform: scale(0.4)
+				&:before
+					color: transparent
+
+.hero_slider .slick-dotted .slick-slider
+		margin-bottom: 0

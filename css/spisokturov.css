@@ -1,0 +1,648 @@
+    .searchTour {
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/search-bg-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Туры */
+.spisokTurov {
+    background-color:#f5f5f5;
+    height: auto;
+}
+.leftTour {
+    width: 65%;
+    float: left;
+}
+.rightTour {
+    width: 15%;
+    float: right;
+}
+/* Форма */
+.index_form {
+    height: 190px;
+    background: url("../images/search-bg-top.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  .index_form .container {
+    height: 100%;
+  }
+  .index_form .container .row {
+    height: 100%;
+  }
+  .index_form .container form {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .index_form .container form div {
+    width: 164px;
+  }
+  .index_form .container .keywords {
+    position: relative;
+  }
+  .index_form .container .keywords .fa {
+    position: absolute;
+    margin-top: 17px;
+    right: 15px;
+    color: #ccd5e8;
+  }
+  .index_form .container .date {
+    position: relative;
+  }
+  .index_form .container .date .fa {
+    position: absolute;
+    right: 15px;
+    margin-top: 17px;
+    color: #ccd5e8;
+  }
+  .index_form .container .date input {
+    padding: 12px 32px 12px 12px;
+    cursor: pointer;
+  }
+  .index_form .container label {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 800;
+  }
+  .index_form .container .keywords input {
+    padding-right: 40px;
+  }
+  .index_form .container input, .index_form .container select {
+    color: #b9c1d5;
+    background-color: #585d6b;
+    border: 2px solid #676e74;
+    outline: none;
+    font-size: 13px;
+    height: 48px;
+    padding: 12px 17px;
+    width: 100%;
+    outline: none;
+  }
+  .index_form .container select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    position: relative;
+  }
+  .index_form .container select:after {
+    font-family: fontAwesome;
+    content: "";
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -13px;
+    pointer-events: none;
+  }
+  .index_form .container button {
+    background-color: #4692e7;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    height: 48px;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    min-width: 166px;
+    border: 0px;
+    color: white;
+    outline: none;
+    margin-top: 31px;
+  }
+  
+  .ui-datepicker {
+    background-color: #f5f5f5;
+    border-color: #ebebeb;
+  }
+  .ui-datepicker table tr th {
+    color: #808080;
+  }
+  .ui-datepicker table tr td a {
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .ui-datepicker-prev, .ui-datepicker-next {
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .ui-datepicker table tr td a, .ui-datepicker-prev, .ui-datepicker-next {
+    color: #5b5b5b;
+  }
+  
+  .ui-datepicker table tr td a.ui-state-disable, .ui-datepicker-prev.ui-state-disabled, .ui-datepicker-next.ui-state-disabled {
+    color: #c0c0c0;
+  }
+  
+  .ui-datepicker {
+    width: 310px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 8px;
+    display: none;
+  }
+  .ui-datepicker table tr td {
+    color: #c0c0c0;
+  }
+  .ui-datepicker .ui-datepicker-title {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  .ui-datepicker .ui-datepicker-month, .ui-datepicker .ui-datepicker-year {
+    width: 48%;
+    margin: 0px 1%;
+    border: none;
+    height: 36px;
+    padding: 0px 8px;
+    font-weight: 700;
+    color: #485da1;
+  }
+  .ui-datepicker select:focus {
+    outline: none;
+  }
+  .ui-datepicker table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .ui-datepicker table tr {
+    background: transparent;
+  }
+  .ui-datepicker table tr th {
+    background: transparent;
+    font-size: 13px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .ui-datepicker table tr td {
+    padding: 0px 0px 5px;
+    line-height: 1;
+    text-align: center;
+  }
+  .ui-datepicker table tr td span {
+    width: 32px;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 10px 0px 6px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+  .ui-datepicker table tr td a {
+    width: 32px;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 10px 0px 6px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+  .ui-datepicker table tr td a:hover {
+    background-color: #485da1;
+    color: white;
+    transition: 0.7 ease-in;
+  }
+  
+  .ui-datepicker-header {
+    position: relative;
+  }
+  
+  .ui-datepicker-prev, .ui-datepicker-next {
+    position: absolute;
+    top: 0px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .ui-datepicker-prev {
+    left: 0px;
+  }
+  .ui-datepicker-prev:after {
+    content: "";
+    font-family: fontAwesome;
+  }
+  .ui-datepicker-prev span {
+    display: none;
+  }
+  
+  .ui-datepicker-next {
+    right: 0px;
+  }
+  .ui-datepicker-next:after {
+    content: "";
+    font-family: fontAwesome;
+  }
+  .ui-datepicker-next span {
+    display: none;
+  }
+  
+  .ui-datepicker-prev.ui-state-disabled, .ui-datepicker-next.ui-state-disabled {
+    background: transparent;
+  }
+/* Левая сторона */
+.oneTour {
+    display: flex;
+    margin-top: 70px;
+    height: 250px;
+    width: 685px;
+    background-color: #fff;
+
+}
+
+/* Картинка  */
+.img {
+    position: relative;
+}
+.tourmaster-thumbnail-ribbon {
+    line-height: 1;
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 20px 14px 30px;
+    left: -10px;
+}
+.tourmaster-thumbnail-ribbon .tourmaster-thumbnail-ribbon-cornor {
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    background: url(images/ribbon-corner-shadow.png) 0px 0px no-repeat;
+    border-width: 0px 10px 10px 10px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.img img {
+    height: 100%;
+}
+/* Информация  */
+.infoTour {
+    width: 50%;
+    padding: 30px;
+    color: #8c8c8c;
+}
+.infoTour p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 22px;
+    margin-top: 3px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.time i {
+    color: #4692e7;
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.calendar i {
+    color: #4692e7;
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.infoTour p:nth-child(2) {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+/* Цена */
+.price {
+    margin: 30px 0 30px 0;
+    width: 30%;
+    border-left: 2px solid rgba(140, 140, 140, 0.5);
+}
+.priceText {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.priceText b {
+    font-size: 20px;
+    font-weight: 900;
+}
+.buttonPrice {
+    text-align: center;
+}
+.buttonPrice a {
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: #4692e7;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.stars {
+    height: 30px;
+    width: 79px;
+    margin: 0 auto;
+}
+
+.star li {
+    float: left;
+    list-style: none;
+}
+.star li i{
+    cursor: pointer;
+    color: #ffa127;
+}
+.but {
+    margin-top: 25px;
+}
+/* спаны номер */
+.page {
+    margin: 30px 0 108px 65px;
+}
+.page-numbers {
+    float: left;
+    width: 45px;
+    background-color: #929292;
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+    margin-right: 4px;
+    text-align: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.current i {
+    padding-top: 17px;
+}
+/* Правая сторона */
+.rightTour {
+    margin-top: 70px;
+}
+.nameLatestTour {
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+.infoAboutSomeTour {
+    margin-top: 30px;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+.border-line {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+.infoAboutSomeTour img {
+    height: 100%;
+}
+.infoAboutSomeTour p:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 82px;
+
+}
+.infoAboutSomeTour p:nth-child(3) {
+    position: absolute;
+    top: 50px;
+    left: 82px;
+}
+.infoAboutSomeTour p:nth-child(3) b {
+font-weight: 900;
+}
+
+.tourmaster-tour-widget .tourmaster-thumbnail-ribbon {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 13px 6px;
+    float: left;
+    position: static;
+}
+
+.tourmaster {
+    line-height: 1;
+    z-index: 1;
+    position: absolute;
+    top: 63px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 22px 10px 15px;
+    left: -10px;
+}
+
+/* Виджет */
+.widget {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.textwidget {
+    padding: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Категории туров */
+.tourCategory {
+    height: 335px;
+}
+.tourCategory a {
+    float: left;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-top: 13px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgba(140, 140, 140, 0.5);
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.tourCategory a:hover {
+    color: black;
+}
+
+.tourCategory p {
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 700;
+    letter-spacing: 0px;
+    position: relative;
+    margin-bottom: 28px;
+    text-decoration: none;
+}
+/* recentArticles */
+
+.recentArticles {
+    margin: 30px 0;
+}
+.recentArticles p {
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 700;
+    letter-spacing: 0px;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+}
+.recentArticles img {
+    height: 75px;
+    float: left;
+}
+.post {
+    margin: 60px 0;
+}
+.post p{
+    margin-left: 85px;
+
+}
+.post a{
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 31px;
+}
+.post i{
+    font-size: 12px;
+    margin-left: 10px;
+}
+/* десктоп верстка правого блока */
+@media (min-width:992px) and (max-width:1199px) {
+    .rightTour {
+        width: 25%;
+        float: right;
+    }
+    
+}
+/* десктоп верстка правого блока */
+@media (min-width:1200px) and (max-width:2000px) {
+    .rightTour {
+        width: 35%;
+        float: right;
+    }
+    
+}
+/* мобильная верстка правого блока */
+@media (min-width:320px) and (max-width:992px) {
+    .rightTour {
+        width: 80%;
+        margin: 30px auto;
+        float: none;
+    }
+    
+}
+/* Мобильная врестка левого блока */
+
+@media (min-width:716px) and (max-width:992px) {
+    .oneTour {
+        width: 100%;
+  
+    }
+    .leftTour {
+        width: 100%;
+    }
+}
+@media (min-width:320px) and (max-width:715px) {
+    .leftTour {
+        width: 100%;
+    }
+
+    .oneTour {
+        display: flex;
+        margin: 30px auto;
+        height: auto;
+        width: 80%;
+        background-color: #fff;
+    }
+ 
+    /* Картинка  */
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+    .oneTour {
+        flex-direction: column;
+    }
+    /* Информация  */
+.infoTour {
+    width: 100%;
+    padding: 30px;
+    color: #8c8c8c;
+}
+.infoTour p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 22px;
+    margin-top: 3px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.time i {
+    color: #4692e7;
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.calendar i {
+    color: #4692e7;
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.infoTour p:nth-child(2) {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+/* Цена */
+.price {
+    margin: 0 0 30px 0;
+    width: 100%;
+    border-top: 2px solid rgba(140, 140, 140, 0.5);
+    border-left: none;
+}
+.priceText {
+    text-align: center;
+    margin-top: 0;
+}
+.buttonPrice {
+    text-align: center;
+}
+.buttonPrice a {
+    margin-top: 20px;
+    padding: 10px 37% 10px 37%;
+    background-color: #4692e7;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.but {
+    margin-top: 30px;
+}
+}

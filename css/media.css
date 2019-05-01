@@ -1,0 +1,164 @@
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  .hero_slider .slider_items .items .sl_image_first .hero_text_first {
+    padding-left: 10vw;
+  }
+
+  .hero_slider .slider_items .items .sl_image_second .hero_text_second {
+    padding-left: 10vw;
+  }
+
+  .hero_slider .slider_items .items .sl_image_third .hero_text_third {
+    padding-left: 10vw;
+  }
+
+  .popular_content {
+    flex-flow: row wrap;
+  }
+
+  .popular_content .slide_content {
+    width: 100%;
+  }
+
+  .popular_content .left_sidebar_content {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .section_blue .item {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hero_slider .slider_items .content .hero_text_first p:nth-child(1) {
+    font-size: 25px;
+  }
+
+  .hero_slider .slider_items .content .hero_text_first p:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero_slider .slider_items .content .hero_text_first p:nth-child(3) {
+    display: none;
+  }
+
+  .hero_slider .slider_items .content .hero_text_first button {
+    padding: 10px 20px;
+  }
+
+  .hero_slider .slider_items .content .hero_text_second p:first-child {
+    font-size: 18px;
+  }
+
+  .hero_slider .slider_items .content .hero_text_second p:nth-child(2) {
+    font-size: 25px;
+  }
+
+  .hero_slider .slider_items .content .hero_text_second p:nth-child(3) {
+    display: none;
+  }
+
+  .hero_slider .slider_items .content .hero_text_second button {
+    padding: 10px 20px;
+  }
+
+  .hero_slider .slider_items .content .hero_text_third p:first-child {
+    font-size: 18px;
+  }
+
+  .hero_slider .slider_items .content .hero_text_third p:nth-child(2) {
+    font-size: 25px;
+  }
+
+  .hero_slider .slider_items .content .hero_text_third p:nth-child(3) {
+    display: none;
+  }
+
+  .hero_slider .slider_items .content .hero_text_third button {
+    padding: 10px 20px;
+    margin: 18px 0 0 0;
+  }
+
+  .hero_slider .slider_items .container {
+    padding-top: 20%;
+  }
+
+  body .hero_slider {
+    height: auto;
+  }
+
+  body .hero_slider .slider_items .items {
+    height: 400px;
+  }
+
+  .index_form .container .row form {
+    padding: 0;
+  }
+
+  .section_blue .item {
+    width: auto;
+  }
+
+  .popular_content .slide_content .popular_header .popular_deals i {
+    font-size: 15px;
+  }
+
+  .popular_content .slide_content .popular_header .popular_deals span {
+    font-size: 10px;
+  }
+
+  .popular_content .slide_content .popular_header .popular_deals span:before {
+    margin: 0 15px;
+  }
+
+  .popular_content .slide_content .popular_header .popular_deals h3 {
+    font-size: 15px;
+  }
+
+  .popular_content .slide_content .tours_header .popular_deals i {
+    font-size: 15px;
+  }
+
+  .popular_content .slide_content .tours_header .popular_deals span {
+    font-size: 10px;
+  }
+
+  .popular_content .slide_content .tours_header .popular_deals span:before {
+    margin: 0 15px;
+  }
+
+  .popular_content .slide_content .tours_header .popular_deals h3 {
+    font-size: 15px;
+  }
+
+  .popular_content .slide_content .top_tours_header .popular_deals i {
+    font-size: 15px;
+  }
+
+  .popular_content .slide_content .top_tours_header .popular_deals span {
+    font-size: 10px;
+  }
+
+  .popular_content .slide_content .top_tours_header .popular_deals span:before {
+    margin: 0 15px;
+  }
+
+  .popular_content .slide_content .top_tours_header .popular_deals h3 {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .section_blue .item {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .left_sidebar .footerPhotoLink .bgImgTable .imgTable {
+    height: 80px;
+  }
+
+  .section_blue .item {
+    width: 35%;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
