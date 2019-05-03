@@ -230,7 +230,7 @@ html, body {
   color: transparent;
 }
 
-.hero_slider .slick-dotted.slick-slider {
+.hero_slider .slick-dotted .slick-slider {
   margin-bottom: 0;
 }
 
